@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POC - Student Data View</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- styles -->
+</head>
+<body>
+    <header>
+        <!-- Hamburger Menu -->
+        <div class="menu">
+        <div class="hamburger-menu">
+            <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>
+            <nav class="nav-menu">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+        <!-- Horizontal Menu -->
+        <nav class="horizontal-menu">
+            <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Students</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Reports</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+        <!-- Main Content: Grid and Tile View -->
+        <div class="main mt-4">
+            <!-- Grid View -->
+            <div id="grid-view" class="grid-view">
+            <!-- Student Grid Items -->
+            <div class="col grid-item p-3 bg-light border">Student 1</div>
+            <div class="col grid-item p-3 bg-light border">Student 2</div>
+            <div class="col grid-item p-3 bg-light border">Student 3</div>
+            <div class="col grid-item p-3 bg-light border">Student 4</div>
+            <div class="col grid-item p-3 bg-light border">Student 5</div>
+            <div class="col grid-item p-3 bg-light border">Student 6</div>
+            <div class="col grid-item p-3 bg-light border">Student 7</div>
+            <div class="col grid-item p-3 bg-light border">Student 8</div>
+            <div class="col grid-item p-3 bg-light border">Student 9</div>
+            <div class="col grid-item p-3 bg-light border">Student 10</div>
+            </div>
+
+            <!-- Tile View -->
+            <div id="tile-view" class="tile-view hidden mt-4">
+                <div class="btn-wrapper mb-3">
+                    <button id="back-Gridbutton" class="btn btn-primary back-button">Back to Grid</button>
+                </div>
+                <!-- Student Tile Items -->
+                <div class="card p-3 mb-3 tile">
+                    <h3>Student 1</h3>
+                    <p>Grade: A</p>
+                    <button class="btn btn-secondary options-button">Options</button>
+                </div>
+                <div class="card p-3 mb-3 tile">
+                    <h3>Student 2</h3>
+                    <p>Grade: B</p>
+                    <button class="btn btn-secondary options-button">Options</button>
+                </div>
+                <!-- <div class="card p-3 mb-3 tile">
+                    <h3>Student 3</h3>
+                    <p>Grade: D</p>
+                    <button class="btn btn-secondary options-button">Options</button>
+                </div>
+                <div class="card p-3 mb-3 tile">
+                    <h3>Student 4</h3>
+                    <p>Grade: A</p>
+                    <button class="btn btn-secondary options-button">Options</button>
+                </div>
+                <div class="card p-3 mb-3 tile">
+                    <h3>Student 5</h3>
+                    <p>Grade: C</p>
+                    <button class="btn btn-secondary options-button">Options</button>
+                </div>
+                <div class="card p-3 mb-3 tile">
+                    <h3>Student 6</h3>
+                    <p>Grade: A</p>
+                    <button class="btn btn-secondary options-button">Options</button>
+                </div>
+                <div class="card p-3 mb-3 tile">
+                    <h3>Student 7</h3>
+                    <p>Grade: A</p>
+                    <button class="btn btn-secondary options-button">Options</button>
+                </div>
+                <div class="card p-3 mb-3 tile">
+                    <h3>Student 8</h3>
+                    <p>Grade: F</p>
+                    <button class="btn btn-secondary options-button">Options</button>
+                </div>
+                <div class="card p-3 mb-3 tile">
+                    <h3>Student 9</h3>
+                    <p>Grade: D</p>
+                    <button class="btn btn-secondary options-button">Options</button>
+                </div>
+                <div class="card p-3 mb-3 tile">
+                    <h3>Student 10</h3>
+                    <p>Grade: C</p>
+                    <button class="btn btn-secondary options-button">Options</button>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Expanded View (Popup/Details View) -->
+        <div id="expanded-view" class="expanded-view hidden mt-4">
+            <h2>Student Details</h2>
+            <p>Name: Student </p>
+            <p>Age: 18</p>
+            <p>Class: 6th</p>
+            <p>Grade: A</p>
+            <button id="back-button" class="btn btn-primary back-button">Back to Tiles</button>
+        </div>
+        </div>
+    </main>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script> <!-- JavaScript -->
+</body>
+</html>
